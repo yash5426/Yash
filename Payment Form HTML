@@ -1,0 +1,106 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .PF{
+        text-align: center;
+        font-size: large;
+        color: blueviolet;
+        border: solid black;
+        border-radius: 200px;
+        border-width: 2px;
+        border-style: ridge;
+        background-color: antiquewhite;
+    }
+    .container{
+        background-color: beige;
+    }
+    .container1{
+        margin-left: 100px;
+        
+    }
+    .CI{
+        margin-left: 60px;
+    }
+    .CT{
+    ;
+    }
+</style>
+<body>
+    <form>
+<div class="container">
+    <div class="PF">
+        <h1>Payment Form</h1>
+    </div>
+
+    <div class="CI">    
+        <h2>Contact Information</h2>
+    </div>
+
+
+<div class="container1">
+    <div class="fname">
+        <p>First Name: <input type="text" name="fname" required></p>
+    </div>
+
+    <div class="lname">
+        <p>Last Name: <input type="text" name="lname" required></p> 
+    </div>
+
+    <div class="email"> 
+        <p>Email: <input type="email" name="email" required></p>
+    </div>
+
+    <div class="phone">        
+        <p>Phone: <input type="tel" name="phone" required></p>
+    </div>
+
+    <div class="pin">       
+        <p>Pincode: <input type="pincode" name="pincode" required></p>
+    </div>
+
+
+<hr>
+    <div class="Gender">    
+    <p>Gender:</p>
+        <p>Male <input type="radio" name="Gender" id="male" required></p>
+        <p>Female <input type="radio" name="Gender" id="female" required></p>
+        <p>Others <input type="radio" name="Gender" id="others" required></p>
+    </div>
+
+    <div class="add">        
+<p>Address <textarea name="add" id="add" cols="30" rows="10"></textarea></p>
+    </div>
+<hr>
+    <div class="PI">
+        <h2>Payment Information</h2>
+    </div>
+
+    <div class="CT">
+        <p>Card Type:</p>
+        <select name="card type" id="card type" required>
+            <option value="">--Select a Card type--</option>
+            <option value="Visa">Visa</option>
+            <option value="Master">Master</option>
+            <option value="American Express">American Express</option>
+            <option value="Discover">Discover</option>
+        </select>
+    </div>
+
+    <div class="exp">      
+        <p>Expiration Date <input type="date" name="exp" id="exp" required></p>
+    </div>
+
+    <div class="cvv">
+        <p>CVV <input type="password" name="cvv" id="cvv" required></p>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit" >
+    </div>
+</div>
+</div>
+    </form>
+</body>
+</html>
